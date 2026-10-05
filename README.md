@@ -56,3 +56,21 @@ Open `index.html` in a browser. No build step, no server.
 | S1-R7 | visible focus, readable dark theme | [style.css#L16-L24](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/ff3e12ad95918962810eef5b6ed113c8cc657432/style.css#L16-L24) | Tab; dark mode |
 | S1-R8 | commit "Stage 1" pushed | [ff3e12a](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/ff3e12ad95918962810eef5b6ed113c8cc657432) | commit history |
 
+## Stage 2: Data logic
+Plain JavaScript, no DOM. comenzi.js holds the array and the functions that read and change it. Results are printed in the browser console (F12).
+
+## Status
+- [x] Stage 1: static mockup
+- [x] Stage 2: data logic in JavaScript
+- [ ] Stage 3: Vite and React project
+
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S2-R1 | JS file linked, logs on page load | [index.html](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/index.html) | open page, F12 |
+| S2-R2 | 3+ items with id, name, state, tag | [comenzi.js#L2-L6](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/989ec8c185bd91f8f1551fdb52801e822b2c054c/comenzi.js#L2-L6) | read |
+| S2-R3 | list, count, search, add, toggle, delete | [comenzi.js#L10-L60](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/989ec8c185bd91f8f1551fdb52801e822b2c054c/comenzi.js#L10-L60) | console output |
+| S2-R4 | add rejects empty name and invalid tag | [comenzi.js#L30-L42](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/989ec8c185bd91f8f1551fdb52801e822b2c054c/comenzi.js#L30-L42) | last 2 console lines |
+| S2-R5 | original array unchanged after add | [comenzi.js#L74-L77](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/989ec8c185bd91f8f1551fdb52801e822b2c054c/comenzi.js#L74-L77) | console line |
+| S2-R6 | README Stage 2 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-02.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-02.md) | read |
+| S2-R7 | commit "Stage 2" pushed | [989ec8c](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/989ec8c185bd91f8f1551fdb52801e822b2c054c) | commit history |
+
