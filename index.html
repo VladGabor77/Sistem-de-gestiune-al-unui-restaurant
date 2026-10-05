@@ -7,61 +7,62 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="app-header">
-    <h1>Sistem Gestiune Restaurant</h1>
-    <p>Gestionează comenzile și starea preparatelor pentru mesele restaurantului.</p>
-    <p class="app-count">3 comenzi, dintre care 2 în preparare</p>
-  </header>
+    <header class="app-header">
+        <h1>Sistem Gestiune Restaurant</h1>
+        <p>Gestionează comenzile și starea preparatelor pentru mesele restaurantului.</p>
+        <p class="app-count">3 comenzi, dintre care 2 în preparare</p>
+    </header>
 
-  <main class="container">
-    <section class="panel">
-      <h2>Adaugă comandă</h2>
-      <form class="item-form">
-        <label>
-          Preparat
-          <input type="text" name="titlu" placeholder="Ex: Ciorbă de burtă" />
-        </label>
-        <label>
-          Categorie
-          <select name="eticheta">
-            <option value="fel-principal">Fel principal</option>
-            <option value="bautura">Băutură</option>
-            <option value="desert">Desert</option>
-          </select>
-        </label>
-        <button type="submit">Adaugă</button>
-      </form>
-    </section>
+    <main class="container">
+        <section class="panel">
+            <h2>Adaugă comandă</h2>
+            <form class="item-form">
+                <label>
+                    Preparat
+                    <input type="text" name="titlu" placeholder="Ex: Ciorbă de burtă" />
+                </label>
+                <label>
+                    Categorie
+                    <select name="eticheta">
+                        <option value="fel-principal">Fel principal</option>
+                        <option value="bautura">Băutură</option>
+                        <option value="desert">Desert</option>
+                    </select>
+                </label>
+                <button type="submit">Adaugă</button>
+            </form>
+        </section>
 
-    <section class="panel">
-      <h2>Lista de comenzi</h2>
-      <!-- Când lista e goală: <p class="empty">Nu există nicio comandă.</p> -->
-      <ul class="item-list">
-        <li class="item-card">
-          <div>
-            <h3>Pizza Margherita</h3>
-            <span class="badge badge-fel-principal">Fel principal</span>
-          </div>
-          <span class="status">În preparare</span>
-        </li>
-        <li class="item-card done">
-          <div>
-            <h3>Tiramisu</h3>
-            <span class="badge badge-desert">Desert</span>
-          </div>
-          <span class="status">Servit</span>
-        </li>
-        <li class="item-card">
-          <div>
-            <h3>Limonadă cu mentă</h3>
-            <span class="badge badge-bautura">Băutură</span>
-          </div>
-          <span class="status">În preparare</span>
-        </li>
-      </ul>
-    </section>
-  </main>
+        <section class="panel">
+            <h2>Lista de comenzi</h2>
+            <!-- Când lista e goală: <p class="empty">Nu există nicio comandă.</p> -->
+            <ul class="item-list">
+                <li class="item-card">
+                    <div>
+                        <h3>Pizza Margherita</h3>
+                        <span class="badge badge-fel-principal">Fel principal</span>
+                    </div>
+                    <span class="status">În preparare</span>
+                </li>
+                <li class="item-card done">
+                    <div>
+                        <h3>Tiramisu</h3>
+                        <span class="badge badge-desert">Desert</span>
+                    </div>
+                    <span class="status">Servit</span>
+                </li>
+                <li class="item-card">
+                    <div>
+                        <h3>Limonadă cu mentă</h3>
+                        <span class="badge badge-bautura">Băutură</span>
+                    </div>
+                    <span class="status">În preparare</span>
+                </li>
+            </ul>
+        </section>
+    </main>
 
-  <footer class="app-footer">Proiect Tehnologii Web</footer>
+    <footer class="app-footer">Proiect Tehnologii Web</footer>
+    <script src="comenzi.js"></script>
 </body>
 </html>
