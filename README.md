@@ -64,6 +64,8 @@ Plain JavaScript, no DOM. comenzi.js holds the array and the functions that read
 - [x] Stage 2: data logic in JavaScript
 - [ ] Stage 3: Vite and React project
 
+
+
 | ID | Requirement | Where (permalink) | How to check |
 |---|---|---|---|
 | S2-R1 | JS file linked, logs on page load | [index.html](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/index.html) | open page, F12 |
@@ -74,3 +76,29 @@ Plain JavaScript, no DOM. comenzi.js holds the array and the functions that read
 | S2-R6 | README Stage 2 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-02.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-02.md) | read |
 | S2-R7 | commit "Stage 2" pushed | [989ec8c](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/989ec8c185bd91f8f1551fdb52801e822b2c054c) | commit history |
 
+
+
+## Stage 3: Vite and React project
+The app now lives in frontend/, built with Vite. The data from stage 2 moved into the main component; the list is still printed raw.
+
+## How to run
+cd frontend
+npm install
+npm run dev
+Then open the address printed in the terminal (http://localhost:5173).
+
+## Status
+- [x] Stage 1: static mockup
+- [x] Stage 2: data logic in JavaScript
+- [x] Stage 3: Vite and React project
+
+
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S3-R1 | npm run dev starts without errors | [package.json](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/frontend/package.json) | npm install, npm run dev |
+| S3-R2 | app name and counter computed from data | [App.jsx#L8-L18](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/6c4c4720566e54b1aee5537a6d595b02c2e6fa29/frontend/src/App.jsx#L8-L18) | edit data, save |
+| S3-R3 | data from README, not from the example | [App.jsx#L1-L5](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/6c4c4720566e54b1aee5537a6d595b02c2e6fa29/frontend/src/App.jsx#L1-L5) | compare with README |
+| S3-R4 | stage 1 styles reused | [App.css](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/frontend/src/App.css) | look at the page |
+| S3-R5 | node_modules ignored, build passes | [.gitignore](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/frontend/.gitignore) | npm run build |
+| S3-R6 | README Stage 3 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-03.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-03.md) | read |
+| S3-R7 | commit "Stage 3" pushed | [6c4c472](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/6c4c4720566e54b1aee5537a6d595b02c2e6fa29) | commit history |
