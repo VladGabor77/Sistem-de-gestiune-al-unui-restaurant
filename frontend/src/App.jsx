@@ -1,3 +1,5 @@
+import ComandaList from "./components/ComandaList.jsx";
+
 const comenzi = [
     { id: 1, titlu: "Pizza Margherita", inPreparare: true, eticheta: "fel-principal" },
     { id: 2, titlu: "Tiramisu", inPreparare: false, eticheta: "desert" },
@@ -5,7 +7,6 @@ const comenzi = [
 ];
 
 export default function App() {
-    // Calculăm câte comenzi sunt active (în preparare)
     const inPreparare = comenzi.filter((c) => c.inPreparare).length;
 
     return (
@@ -21,8 +22,8 @@ export default function App() {
             <main className="container">
                 <section className="panel">
                     <h2>Lista de comenzi</h2>
-                    {/* Temporar: date brute; componentele apar în Etapa 4 */}
-                    <pre>{JSON.stringify(comenzi, null, 2)}</pre>
+                    {/* Folosim componenta și îi transmitem datele prin props */}
+                    <ComandaList comenzi={comenzi} />
                 </section>
             </main>
         </>
