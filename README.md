@@ -102,3 +102,26 @@ Then open the address printed in the terminal (http://localhost:5173).
 | S3-R5 | node_modules ignored, build passes | [.gitignore](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/frontend/.gitignore) | npm run build |
 | S3-R6 | README Stage 3 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-03.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-03.md) | read |
 | S3-R7 | commit "Stage 3" pushed | [6c4c472](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/6c4c4720566e54b1aee5537a6d595b02c2e6fa29) | commit history |
+
+## Stage 4: components
+The list is rendered from the data, through two components:
+- ComandaList receives the whole array and renders one card per item.
+- ComandaCard receives a single item through props and displays it.
+
+## Status
+- [x] Stage 1: static mockup
+- [x] Stage 2: data logic in JavaScript
+- [x] Stage 3: Vite and React project
+- [x] Stage 4: components rendered from data
+- [ ] Stage 5: local state and events
+
+
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S4-R1 | 2+ components in src/components/ | [frontend/src/components/](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/tree/main/frontend/src/components) | open folder |
+| S4-R2 | card receives data through props | [ComandaCard.jsx#L7](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/057eee9c8eecb3095ba7a0c804d10d72f61930f0/frontend/src/components/ComandaCard.jsx#L7) | read |
+| S4-R3 | map + key={id}, no console warnings | [ComandaList.jsx#L11-L15](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/057eee9c8eecb3095ba7a0c804d10d72f61930f0/frontend/src/components/ComandaList.jsx#L11-L15) | F12, Console |
+| S4-R4 | message for empty list | [ComandaList.jsx#L4-L7](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/057eee9c8eecb3095ba7a0c804d10d72f61930f0/frontend/src/components/ComandaList.jsx#L4-L7) | set array to [] |
+| S4-R5 | state changes the card look | [ComandaCard.jsx#L8-L9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/057eee9c8eecb3095ba7a0c804d10d72f61930f0/frontend/src/components/ComandaCard.jsx#L8-L9) | toggle a done flag |
+| S4-R6 | README Stage 4 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-04.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-04.md) | read |
+| S4-R7 | commit "Stage 4" pushed | [057eee9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/057eee9c8eecb3095ba7a0c804d10d72f61930f0) | commit history |
