@@ -136,7 +136,7 @@ The list lives in React state. Checking and deleting work from the page, and the
 - [x] Stage 3: Vite and React project
 - [x] Stage 4: components rendered from data
 - [x] Stage 5: local state and events
-- [ ] Stage 6: loading data from a mock API
+- [ ] Stage 6: loading data from a mock API.
 
 
 | ID | Requirement | Where (permalink) | How to check |
