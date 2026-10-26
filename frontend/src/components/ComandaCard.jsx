@@ -4,22 +4,31 @@ const ETICHETE = {
     "desert": "Desert"
 };
 
-export default function ComandaCard({ comanda }) {
-    // Dacă nu mai este în preparare, adăugăm clasa "done" (care taie textul)
+export default function ComandaCard({ comanda, onToggle, onDelete }) {
     const cardClass = comanda.inPreparare ? "item-card" : "item-card done";
 
     return (
         <li className={cardClass}>
-            <div>
-                <h3>{comanda.titlu}</h3>
-                {/* Generăm dinamic clasa de culoare neon în funcție de etichetă */}
-                <span className={`badge badge-${comanda.eticheta}`}>
-                    {ETICHETE[comanda.eticheta]}
-                </span>
-            </div>
-            <span className="status">
-                {comanda.inPreparare ? "În preparare" : "Servit"}
-            </span>
+            <label className="task-main">
+                <input
+                    type="checkbox"
+                    checked={!comanda.inPreparare}
+                    onChange={() => onToggle(comanda.id)}
+                />
+                <div>
+                    <h3>{comanda.titlu}</h3>
+                    <span className={`badge badge-${comanda.eticheta}`}>
+                        {ETICHETE[comanda.eticheta]}
+                    </span>
+                </div>
+            </label>
+            <button
+                className="btn-danger"
+                onClick={() => onDelete(comanda.id)}
+                aria-label={`Șterge ${comanda.titlu}`}
+            >
+                Șterge
+            </button>
         </li>
     );
 }

@@ -125,3 +125,15 @@ The list is rendered from the data, through two components:
 | S4-R5 | state changes the card look | [ComandaCard.jsx#L8-L9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/057eee9c8eecb3095ba7a0c804d10d72f61930f0/frontend/src/components/ComandaCard.jsx#L8-L9) | toggle a done flag |
 | S4-R6 | README Stage 4 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-04.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-04.md) | read |
 | S4-R7 | commit "Stage 4" pushed | [057eee9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/057eee9c8eecb3095ba7a0c804d10d72f61930f0) | commit history |
+
+
+## Stage 5: local state and events
+The list lives in React state. Checking and deleting work from the page, and the counters in the header follow automatically. A button in the header switches between light and dark mode. Changes are lost on refresh, which is what stage 6 and stage 10 fix.
+
+## Status
+- [x] Stage 1: static mockup
+- [x] Stage 2: data logic in JavaScript
+- [x] Stage 3: Vite and React project
+- [x] Stage 4: components rendered from data
+- [x] Stage 5: local state and events
+- [ ] Stage 6: loading data from a mock API
