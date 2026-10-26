@@ -137,3 +137,15 @@ The list lives in React state. Checking and deleting work from the page, and the
 - [x] Stage 4: components rendered from data
 - [x] Stage 5: local state and events
 - [ ] Stage 6: loading data from a mock API
+
+
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S5-R1 | list kept in useState, in App | [App.jsx#L14-L15](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L14-L15) | read |
+| S5-R2 | toggling changes state and card look | [App.jsx#L18-L22](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L18-L22), [ComandaCard.jsx#L14-L18](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/components/ComandaCard.jsx#L14-L18) | click a checkbox |
+| S5-R3 | delete removes the item | [App.jsx#L24-L26](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L24-L26), [ComandaCard.jsx#L26-L30](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/components/ComandaCard.jsx#L26-L30) | click Delete |
+| S5-R4 | header counter derived, not in state | [App.jsx#L34](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L34) | toggle, watch header |
+| S5-R5 | immutable updates (no push, splice, assignment) | [App.jsx#L18-L26](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L18-L26) | read |
+| S5-R6 | light/dark toggle: state + data-theme on html | [App.jsx#L28-L32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L28-L32), [App.css#L22-L43](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.css#L22-L43) | click the button, both system themes |
+| S5-R7 | no console warnings; README + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-05.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-05.md) | F12, Console |
+| S5-R8 | commit "Stage 5" pushed | [a1b9c32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c) | commit history |it "Stage 5" pushed | [a1b9c32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c) | commit history |
