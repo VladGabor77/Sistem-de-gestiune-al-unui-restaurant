@@ -226,3 +226,20 @@ ul.item-list {
         background: var(--bg);
         border-color: var(--accent);
     }
+/* Etapa 6: stări de încărcare și eroare */
+.info {
+    color: var(--muted);
+    font-weight: bold;
+}
+
+.error {
+    color: #ff4444;
+    background: rgba(255, 68, 68, 0.05);
+    border: 1px solid #ff4444;
+    border-radius: 8px;
+    padding: 12px 16px;
+    /* Efectul neon roșu pe contur și text */
+    box-shadow: 0 0 15px rgba(255, 68, 68, 0.4), inset 0 0 10px rgba(255, 68, 68, 0.1);
+    text-shadow: 0 0 8px rgba(255, 68, 68, 0.6);
+    font-weight: bold;
+}

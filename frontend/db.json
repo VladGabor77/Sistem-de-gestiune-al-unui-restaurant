@@ -1,0 +1,34 @@
+{
+  "comenzi": [
+    {
+      "id": 1,
+      "titlu": "Pizza Margherita",
+      "inPreparare": true,
+      "eticheta": "fel-principal"
+    },
+    {
+      "id": 2,
+      "titlu": "Tiramisu",
+      "inPreparare": false,
+      "eticheta": "desert"
+    },
+    {
+      "id": 3,
+      "titlu": "Limonadă cu mentă",
+      "inPreparare": true,
+      "eticheta": "bautura"
+    },
+    {
+      "id": 4,
+      "titlu": "Paste Carbonara",
+      "inPreparare": false,
+      "eticheta": "fel-principal"
+    },
+    {
+      "id": 5,
+      "titlu": "Clătite cu ciocolată",
+      "inPreparare": true,
+      "eticheta": "desert"
+    }
+  ]
+}

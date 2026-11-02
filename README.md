@@ -149,3 +149,15 @@ The list lives in React state. Checking and deleting work from the page, and the
 | S5-R6 | light/dark toggle: state + data-theme on html | [App.jsx#L28-L32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.jsx#L28-L32), [App.css#L22-L43](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c/frontend/src/App.css#L22-L43) | click the button, both system themes |
 | S5-R7 | no console warnings; README + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-05.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-05.md) | F12, Console |
 | S5-R8 | commit "Stage 5" pushed | [a1b9c32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c) | commit history |it "Stage 5" pushed | [a1b9c32](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/a1b9c32c222e5d38c6f3dea6892e833d0eabf67c) | commit history |
+
+
+## Stage 6: data from a mock API
+The list is served by json-server from db.json. The app fetches it on load and shows a loading state and an error state.
+npm run api # terminal 1, http://localhost:3001
+npm run dev # terminal 2, http://localhost:5173
+
+## Status
+- [x] Stage 4: components rendered from data
+- [x] Stage 5: local state and events
+- [x] Stage 6: data from a mock API
+- [ ] Stage 7: form and validation
