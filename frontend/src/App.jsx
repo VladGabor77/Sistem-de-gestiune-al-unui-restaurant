@@ -48,23 +48,37 @@ export default function App() {
     }
 
     const inPreparare = comenzi.filter((c) => c.inPreparare).length;
+    const total = comenzi.length;
+    const gata = total - inPreparare;
+    const procentaj = total === 0 ? 0 : Math.round((gata / total) * 100);
 
     return (
         <>
             <header className="app-header">
-                <button className="theme-toggle" onClick={handleTema} aria-pressed={tema === "dark"}>
-                    {tema === "dark" ? "Mod luminos" : "Mod întunecat"}
+                <button className="theme-toggle" onClick={handleTema}>
+                    {tema === "dark" ? "☀️ Mod luminos" : "🌙 Mod întunecat"}
                 </button>
-                <h1>Sistem Gestiune Restaurant</h1>
-                <p>Gestionează comenzile și starea preparatelor pentru mesele restaurantului.</p>
-                <p className="app-count">
-                    {comenzi.length} comenzi, dintre care {inPreparare} în preparare
-                </p>
+
+                {/* Poza restaurantului */}
+                <img
+                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=200&q=80"
+                    alt="Logo Restaurant"
+                    className="header-logo"
+                />
+
+                {/* Noul tău titlu */}
+                <h1>Byte &amp; Bite</h1>
             </header>
 
             <main className="container">
                 <section className="panel">
                     <h2>Lista de comenzi</h2>
+
+                    {/* Bara de progres neon pe care ai cerut-o anterior */}
+                    <div className="progress-container">
+                        <div className="progress-bar" style={{ width: `${procentaj}%` }}></div>
+                    </div>
+                    <p className="progress-text">{procentaj}% comenzi finalizate</p>
 
                     {loading && <p className="info">Se încarcă lista de comenzi...</p>}
                     {error && (
