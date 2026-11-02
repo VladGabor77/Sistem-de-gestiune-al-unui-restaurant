@@ -161,3 +161,14 @@ npm run dev # terminal 2, http://localhost:5173
 - [x] Stage 5: local state and events
 - [x] Stage 6: data from a mock API
 - [ ] Stage 7: form and validation
+
+
+| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S6-R1 | npm run api starts, route shows JSON | [package.json#L8](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/package.json#L8), [db.json](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/db.json) | open localhost:3001/comenzi |
+| S6-R2 | data no longer in React code | [App.jsx#L10](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/App.jsx#L10) | read |
+| S6-R3 | loading message while waiting | [App.jsx#L11](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/App.jsx#L11), [App.jsx#L62](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/App.jsx#L62) | --delay 4000 |
+| S6-R4 | error message when API is down | [App.jsx#L63-L67](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/App.jsx#L63-L67) | stop npm run api, refresh |
+| S6-R5 | fetch only in api.js, URL from env | [api.js#L1-L9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/api.js#L1-L9), [.env.example](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/.env.example) | search for fetch |
+| S6-R6 | README Stage 6 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-06.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-06.md) | read |
+| S6-R7 | commit "Stage 6" pushed | [bf29835](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/bf29835c030a9d40263cb13633d6e2c09b988608) | commit history |
