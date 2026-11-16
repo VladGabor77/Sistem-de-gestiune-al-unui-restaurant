@@ -194,3 +194,12 @@ in the list.
 | S7-R6 | tw.json and the data-testid attributes from table 7.3 | [tw.json](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/tw.json#L1-L6), [ComandaCard.jsx](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/components/ComandaCard.jsx#L12-L37) | querySelectorAll in the console |
 | S7-R7 | README Stage 7 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-07.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-07.md) | read |
 | S7-R8 | commit "Stage 7" pushed | [285a4f3](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/285a4f31a0fe8ca62db9042d6825e443730aabb8) | commit history |
+
+
+## Stage 8: routing and detail page
+Three pages behind React Router: the main list (`/`), a detail page at `/comenzi/:id`, and an about page, plus a 404 page for unknown URLs. Component styles moved to CSS Modules. Added UX improvements: live search filter, card slide-in animations, and a custom neon scrollbar.
+
+## Status
+[x] Stage 7: form and validation
+[x] Stage 8: routing and detail page
+[ ] Stage 9: own backend with Express
