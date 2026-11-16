@@ -1,13 +1,13 @@
 import ComandaCard from "./ComandaCard.jsx";
+import styles from "./ComandaList.module.css";
 
 export default function ComandaList({ comenzi, onToggle, onDelete }) {
     if (comenzi.length === 0) {
-        // Am adăugat data-testid="empty"
         return <p className="empty" data-testid="empty">Nu există nicio comandă.</p>;
     }
 
     return (
-        <ul className="item-list">
+        <ul className={styles.list}>
             {comenzi.map((comanda) => (
                 <ComandaCard
                     key={comanda.id}

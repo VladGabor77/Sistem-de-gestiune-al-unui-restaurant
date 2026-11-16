@@ -1,5 +1,9 @@
+import { Link } from "react-router-dom";
+import { ETICHETE_CATEGORIE } from "../constants.js";
+import styles from "./ComandaCard.module.css";
+
 export default function ComandaCard({ comanda, onToggle, onDelete }) {
-    const cardClass = comanda.inPreparare ? "item-card active-pulse" : "item-card done";
+    const cardClass = comanda.inPreparare ? `${styles.card} ${styles.activePulse}` : `${styles.card} ${styles.done}`;
 
     function getIcon(categorie) {
         if (categorie === "fel-principal") return "🍝";
@@ -10,25 +14,25 @@ export default function ComandaCard({ comanda, onToggle, onDelete }) {
 
     return (
         <article className={cardClass} data-testid="item" data-id={comanda.id}>
-
-            <label className="task-main">
+            <div className={styles.main}>
                 <input
                     type="checkbox"
                     checked={!comanda.inPreparare}
                     onChange={() => onToggle(comanda.id)}
+                    aria-label={`Marchează ${comanda.titlu}`}
                     data-testid="item-toggle"
                 />
-
-                <div className="item-content">
-                    <h3 className="item-title" data-testid="item-title">
-                        <span className="item-icon">{getIcon(comanda.eticheta)}</span>
+                <div className={styles.content}>
+                    {/* Titlul a devenit link către pagina de detaliu */}
+                    <Link to={`/comenzi/${comanda.id}`} className={styles.title} data-testid="item-link">
+                        <span className={styles.icon}>{getIcon(comanda.eticheta)}</span>
                         {comanda.titlu}
-                    </h3>
+                    </Link>
                     <span className={`badge badge-${comanda.eticheta}`}>
-                        {comanda.eticheta}
+                        {ETICHETE_CATEGORIE[comanda.eticheta]}
                     </span>
                 </div>
-            </label>
+            </div>
 
             <button
                 className="btn-danger"
@@ -37,7 +41,6 @@ export default function ComandaCard({ comanda, onToggle, onDelete }) {
             >
                 Șterge
             </button>
-
         </article>
     );
 }

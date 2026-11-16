@@ -1,4 +1,8 @@
 import { useState } from "react";
+// Adaugă importul ăsta sus, sub celelalte importuri:
+import styles from "./ComandaForm.module.css";
+
+// Apoi, mai jos, înlocuiește <form className="task-form" ...> cu:
 
 const CATEGORII = [
     { value: "fel-principal", label: "Fel principal" },
@@ -48,8 +52,7 @@ export default function ComandaForm({ onAdd }) {
     }
 
     return (
-        <form className="task-form" onSubmit={handleSubmit} noValidate data-testid="form">
-            <label>
+        <form className={styles.form} onSubmit={handleSubmit} noValidate data-testid="form">            <label>
                 Preparat
                 <input
                     type="text"

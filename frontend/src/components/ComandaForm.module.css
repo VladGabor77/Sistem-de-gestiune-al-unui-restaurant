@@ -1,0 +1,42 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+    .form label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 600;
+    }
+
+    .form input, .form select {
+        padding: 10px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--card);
+        color: var(--text);
+        font: inherit;
+    }
+
+    .form button {
+        background: var(--accent);
+        color: var(--accent-text);
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font: inherit;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+        .form button:hover:not(:disabled) {
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+        }
+
+        .form button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }

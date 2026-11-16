@@ -1,0 +1,33 @@
+.detail {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.done {
+    text-decoration: line-through;
+    color: var(--muted);
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 8px 16px;
+    margin: 0;
+}
+
+    .fields dt {
+        font-weight: 600;
+        color: var(--muted);
+    }
+
+    .fields dd {
+        margin: 0;
+        font-weight: bold;
+    }

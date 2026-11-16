@@ -1,22 +1,40 @@
 {
   "comenzi": [
     {
-      "id": 1,
-      "titlu": "Pizza Margherita",
+      "titlu": "Shaorma WOW",
+      "eticheta": "fel-principal",
       "inPreparare": true,
-      "eticheta": "fel-principal"
+      "id": 5
     },
     {
-      "id": 4,
-      "titlu": "Paste Carbonara",
-      "inPreparare": false,
-      "eticheta": "fel-principal"
+      "titlu": "pasteee",
+      "eticheta": "fel-principal",
+      "inPreparare": true,
+      "id": 6
     },
     {
-      "id": 5,
-      "titlu": "Clătite cu ciocolată",
+      "titlu": "baba",
+      "eticheta": "fel-principal",
       "inPreparare": true,
-      "eticheta": "desert"
+      "id": 7
+    },
+    {
+      "titlu": "adsada",
+      "eticheta": "fel-principal",
+      "inPreparare": true,
+      "id": 8
+    },
+    {
+      "titlu": "asdasda",
+      "eticheta": "fel-principal",
+      "inPreparare": true,
+      "id": 9
+    },
+    {
+      "titlu": "asdasd",
+      "eticheta": "fel-principal",
+      "inPreparare": true,
+      "id": 10
     }
   ]
 }
