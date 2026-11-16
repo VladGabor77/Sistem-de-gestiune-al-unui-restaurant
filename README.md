@@ -172,3 +172,25 @@ npm run dev # terminal 2, http://localhost:5173
 | S6-R5 | fetch only in api.js, URL from env | [api.js#L1-L9](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/src/api.js#L1-L9), [.env.example](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/bf29835c030a9d40263cb13633d6e2c09b988608/frontend/.env.example) | search for fetch |
 | S6-R6 | README Stage 6 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-06.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-06.md) | read |
 | S6-R7 | commit "Stage 6" pushed | [bf29835](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/bf29835c030a9d40263cb13633d6e2c09b988608) | commit history |
+
+
+## Stage 7: form and validation
+Items can be added from the page. The form is controlled and validated,
+and every change (add, toggle, delete) goes to the API before it shows up
+in the list.
+
+## Status
+[x] Stage 6: data from a mock API
+[x] Stage 7: form and validation
+[ ] Stage 8: routing and detail page
+
+	| ID | Requirement | Where (permalink) | How to check |
+|---|---|---|---|
+| S7-R1 | controlled form: value + onChange on every field | [ComandaForm.jsx](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/components/ComandaForm.jsx#L52-L73) | read |
+| S7-R2 | empty title shows an error, nothing is sent | [ComandaForm.jsx (valideaza)](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/components/ComandaForm.jsx#L17-L22) | submit empty, watch Network |
+| S7-R3 | added item shows in the list and survives refresh | [App.jsx](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/App.jsx#L1-L117), [api.js](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/api.js#L23-L25) | add, refresh |
+| S7-R4 | toggle and delete survive refresh | [App.jsx](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/App.jsx#L1-L117) | toggle/delete, refresh |
+| S7-R5 | button disabled while sending, form cleared only on success | [ComandaForm.jsx (submit)](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/components/ComandaForm.jsx#L81-L83) | -delay 3000; stop API and submit |
+| S7-R6 | tw.json and the data-testid attributes from table 7.3 | [tw.json](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/tw.json#L1-L6), [ComandaCard.jsx](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/285a4f31a0fe8ca62db9042d6825e443730aabb8/frontend/src/components/ComandaCard.jsx#L12-L37) | querySelectorAll in the console |
+| S7-R7 | README Stage 7 section + AI log | [README.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/README.md), [ai-log/etapa-07.md](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/blob/main/ai-log/etapa-07.md) | read |
+| S7-R8 | commit "Stage 7" pushed | [285a4f3](https://github.com/VladGabor77/Sistem-de-gestiune-al-unui-restaurant/commit/285a4f31a0fe8ca62db9042d6825e443730aabb8) | commit history |
