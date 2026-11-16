@@ -2,7 +2,8 @@ import ComandaCard from "./ComandaCard.jsx";
 
 export default function ComandaList({ comenzi, onToggle, onDelete }) {
     if (comenzi.length === 0) {
-        return <p className="empty">Nu există nicio comandă.</p>;
+        // Am adăugat data-testid="empty"
+        return <p className="empty" data-testid="empty">Nu există nicio comandă.</p>;
     }
 
     return (

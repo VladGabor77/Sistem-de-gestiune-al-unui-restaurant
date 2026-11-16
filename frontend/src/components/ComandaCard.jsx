@@ -9,18 +9,18 @@ export default function ComandaCard({ comanda, onToggle, onDelete }) {
     }
 
     return (
-        <article className={cardClass}>
+        <article className={cardClass} data-testid="item" data-id={comanda.id}>
 
-            {/* Am transformat tot grupul din stânga într-un label clicabil */}
             <label className="task-main">
                 <input
                     type="checkbox"
                     checked={!comanda.inPreparare}
                     onChange={() => onToggle(comanda.id)}
+                    data-testid="item-toggle"
                 />
 
                 <div className="item-content">
-                    <h3 className="item-title">
+                    <h3 className="item-title" data-testid="item-title">
                         <span className="item-icon">{getIcon(comanda.eticheta)}</span>
                         {comanda.titlu}
                     </h3>
@@ -30,7 +30,11 @@ export default function ComandaCard({ comanda, onToggle, onDelete }) {
                 </div>
             </label>
 
-            <button className="btn-danger" onClick={() => onDelete(comanda.id)}>
+            <button
+                className="btn-danger"
+                onClick={() => onDelete(comanda.id)}
+                data-testid="item-delete"
+            >
                 Șterge
             </button>
 

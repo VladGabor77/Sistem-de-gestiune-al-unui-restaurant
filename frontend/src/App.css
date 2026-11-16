@@ -90,7 +90,8 @@ body {
     margin: 32px auto;
     padding: 0 16px;
     display: grid;
-    grid-template-columns: 1fr;
+    /* Etapa 7: formularul în stânga, lista în dreapta */
+    grid-template-columns: 1fr 2fr;
     gap: 24px;
     align-items: start;
 }
@@ -324,3 +325,54 @@ ul.item-list {
     align-items: center;
     margin: 0;
 }
+
+/* Etapa 7: formular și validare */
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+    .task-form label {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-weight: 600;
+    }
+
+    .task-form input, .task-form select {
+        padding: 10px;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--bg);
+        color: var(--text);
+        font: inherit;
+    }
+
+    .task-form button {
+        background: var(--accent);
+        color: var(--accent-text);
+        border: none;
+        border-radius: 8px;
+        padding: 12px;
+        font: inherit;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+
+        .task-form button:hover:not(:disabled) {
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+        }
+
+        /* Etapa 7: buton dezactivat cât timp se trimite */
+        .task-form button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+    /* Eroare pe input */
+    .task-form input[aria-invalid="true"] {
+        border-color: #ff4444;
+        box-shadow: 0 0 10px rgba(255, 68, 68, 0.2);
+    }
